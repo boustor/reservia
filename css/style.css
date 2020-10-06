@@ -1,7 +1,7 @@
 body {
     background-color: white;
     font-family: 'Raleway-Regular', Arial, serif;
-    max-width: 1024px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -10,46 +10,91 @@ body {
     src: url('static/Raleway-Regular.ttf') format('truetype');
 }
 
-    .container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    .menu {
-        width: 30em;
-    }
-    nav {
-        width: 100%;
-        margin: 0 auto;
-        top: 0px;
-        position: sticky;
-    }
-    nav ul {
-        list-style-type: none;
-    }
-    nav ul:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-    nav li {
-        width: 50%;
-        text-align: center;
-        margin-top: -16px;
-        border-top: 2px solid white;
-    }
-    nav a {
-        display: block;
-        text-decoration: none;
-        color: black;
-        padding: 10px;
-    }
-    nav li:hover {
-        border-top: 2px solid #0065FC;
-    }
-    nav a:hover {
-        color: #0065FC;
-    }
-    .inscrire {
-        text-decoration: none;
-    }
+#entete {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+}
+
+.entelem:nth-child(2) {
+    flex: 1;
+    text-align: right;
+}
+
+.entelem:nth-child(3) {
+    width: 130px;
+    text-align: center;
+}
+
+.menu ul {
+    width: 50%;
+    list-style-type: none;
+    padding-top: 0px;
+}
+
+.menu ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.menu li {
+    border-top: 2px solid white;
+    display: inline;
+    padding-top: 29px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+}
+
+.menu li:hover {
+    border-top: 2px solid #0065FC;
+}
+
+.menu a:hover {
+    color: #0065FC;
+}
+
+.inscrire {
+    text-decoration: none;
+}
+
+.desc1 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.desc2 {
+    margin-top: -15px;
+}
+
+#pied {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 200px;
+    background-color: #F2F2F2;
+}
+
+.piedelem {
+    width: 33%;
+}
+
+.piedelem ul {
+    list-style-type: none;
+}
+
+.titpied {
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.ligpied {
+    margin-bottom: 10px;
+}
