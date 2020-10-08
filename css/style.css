@@ -10,6 +10,11 @@ body {
     src: url('static/Raleway-Regular.ttf') format('truetype');
 }
 
+
+/*
+                Gestion du bandeau d'entête
+*/
+
 #entete {
     display: flex;
     flex-flow: row wrap;
@@ -64,6 +69,11 @@ body {
     text-decoration: none;
 }
 
+
+/*
+                Partie descriptive
+*/
+
 .desc1 {
     font-weight: bold;
     font-size: 1.3em;
@@ -71,7 +81,85 @@ body {
 
 .desc2 {
     margin-top: -15px;
+    list-style-type: none;
 }
+
+.recherche {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.rechdeb {
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    font-style: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rechinp {
+    line-height: 35px;
+    border: solid 1px #F2F2F2;
+    width: 150px;
+    font-weight: bold;
+}
+
+.rechinp:focus {
+    outline: 0;
+}
+
+.rechbut {
+    height: 35px;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    background-color: #0065FC;
+    width: 90px;
+    color: white;
+    font-style: bold;
+}
+
+.rechbut:focus {
+    outline: 0;
+}
+
+.filtre {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.filt {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #DEEBFF;
+    text-align: center;
+}
+
+.imgcerc {
+    margin: auto;
+}
+
+
+/*
+                Gestion du pied
+*/
 
 #pied {
     display: flex;
@@ -97,4 +185,16 @@ body {
 
 .ligpied {
     margin-bottom: 10px;
+}
+
+
+/*
+
+*/
+
+.fa-money-bill-wave,
+.fa-dog,
+.fa-child,
+.fa-heart {
+    color: #0065FC;
 }
