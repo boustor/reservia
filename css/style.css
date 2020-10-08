@@ -150,10 +150,20 @@ body {
     border-radius: 20px;
     background: #DEEBFF;
     text-align: center;
+    margin-right: -16px;
 }
 
 .imgcerc {
     margin: auto;
+}
+
+.titfil {
+    border: 3px solid #F2F2F2;
+    border-radius: 0 10px 10px 0;
+    border-left-style: none;
+    height: 34px;
+    padding: 0px 20px 0px 25px;
+    z-index: -1;
 }
 
 
