@@ -15,6 +15,8 @@ body {
                 Gestion du bandeau d'entête
 */
 
+@media (max-width: 800px) {}
+
 #entete {
     display: flex;
     flex-flow: row wrap;
@@ -164,12 +166,29 @@ body {
     height: 34px;
     padding: 0px 20px 0px 25px;
     z-index: -1;
+    margin-right: 30px;
+}
+
+.filt0 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 
 /*
                 Gestion du pied
 */
+
+@media (max-width: 800px) {
+    #pied {
+        flex-direction: row;
+    }
+    .piedelem {
+        flex: 100%;
+        background-color: #f2f2f2;
+    }
+}
 
 #pied {
     display: flex;
