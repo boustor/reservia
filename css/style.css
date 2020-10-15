@@ -1,8 +1,13 @@
+html {
+    max-width: 1455px;
+    margin: auto;
+    background-color: #e1e1e1;
+}
+
 body {
     background-color: white;
     font-family: 'Raleway-Regular', Arial, serif;
-    max-width: 1080px;
-    margin: auto;
+    padding: 0px 50px 0px 50px;
 }
 
 @font-face {
@@ -10,41 +15,50 @@ body {
     src: url('static/Raleway-Regular.ttf') format('truetype');
 }
 
+h3 {
+    font-weight: bold;
+}
+
 
 /*
                 Gestion du bandeau d'entête
 */
 
-@media (max-width: 800px) {}
-
-#entete {
+.entete {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: flex-end;
     height: 80px;
+    margin: 0;
 }
 
-.entelem:nth-child(2) {
-    flex: 1;
+.entlogo {
+    flex-grow: 1;
+}
+
+.entdroite {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    flex-grow: 10;
+    align-items: center;
+}
+
+.entmenu {
     text-align: right;
+    flex-grow: 10;
 }
 
-.entelem:nth-child(3) {
+.entinsc {
     width: 130px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .menu ul {
     width: 50%;
     list-style-type: none;
     padding-top: 0px;
-}
-
-.menu ul:after {
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .menu li {
@@ -86,6 +100,25 @@ body {
     list-style-type: none;
 }
 
+.desc3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.cerc3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: -16px;
+    border: solid 1px #DEEBFF;
+    margin-right: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
 .recherche {
     display: flex;
     flex-flow: row wrap;
@@ -95,20 +128,21 @@ body {
 .rechdeb {
     background-color: #F2F2F2;
     width: 50px;
-    height: 40px;
+    height: 50px;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
-    font-style: bold;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .rechinp {
-    line-height: 35px;
+    line-height: 46px;
     border: solid 1px #F2F2F2;
-    width: 150px;
+    width: 235px;
     font-weight: bold;
+    font-size: large;
 }
 
 .rechinp:focus {
@@ -116,14 +150,14 @@ body {
 }
 
 .rechbut {
-    height: 35px;
+    height: 50px;
     border: 0;
     border-radius: 0 10px 10px 0;
     text-align: center;
     background-color: #0065FC;
-    width: 90px;
+    width: 135px;
     color: white;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .rechbut:focus {
@@ -137,6 +171,12 @@ body {
     justify-content: left;
 }
 
+.filt0 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
 .filt {
     display: flex;
     flex-flow: row wrap;
@@ -144,15 +184,18 @@ body {
     justify-content: left;
     text-align: center;
     margin-right: 30px;
+    font-weight: bold;
+    font-size: large;
 }
 
 .cercle {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
     background: #DEEBFF;
     text-align: center;
-    margin-right: -16px;
+    margin-right: -20px;
+    z-index: 1;
 }
 
 .imgcerc {
@@ -161,34 +204,113 @@ body {
 
 .titfil {
     border: 3px solid #F2F2F2;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 30px 30px 0;
     border-left-style: none;
-    height: 34px;
-    padding: 0px 20px 0px 25px;
-    z-index: -1;
+    height: 45px;
+    padding: 0px 15px 0px 30px;
     margin-right: 30px;
-}
-
-.filt0 {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/*
+                premiere partie des images
+*/
+
+.imageh {
+    display: flex;
+}
+
+.cadrehg,
+.cadrehd {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.cadrehdm {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin: 0px 0px 0px 50px;
+    padding: 0px 30px 30px 30px;
+}
+
+.imgauche {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgdroit {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.titrebul {
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.esplig {
+    margin-top: 8px;
+    padding-left: 15px;
+    font-size: small;
+}
+
+.cadregi {
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    margin: 30px 0 0 30px;
+    border-radius: 20px;
+}
+
+.cadreg {
+    width: 235px;
+    height: 115px;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.imgg {
+    border-radius: 15px 15px 0px 0px;
+    max-width: 236px;
+}
+
+.cadredi {
+    height: 145px;
+    width: 340px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cadred {
+    width: 125px;
+    height: 135px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.imgd {
+    border-radius: 15px 0px 0px 15px;
+    max-height: 135px;
+}
+
+.imgdok {
+    width: 134px;
 }
 
 
 /*
                 Gestion du pied
 */
-
-@media (max-width: 800px) {
-    #pied {
-        flex-direction: row;
-    }
-    .piedelem {
-        flex: 100%;
-        background-color: #f2f2f2;
-    }
-}
 
 #pied {
     display: flex;
@@ -224,6 +346,44 @@ body {
 .fa-money-bill-wave,
 .fa-dog,
 .fa-child,
-.fa-heart {
+.fa-heart,
+.fa-info,
+.etoileb {
     color: #0065FC;
+}
+
+.etoileg {
+    color: #e1e1e1;
+}
+
+@media (max-width: 768px) {
+    .entdroite {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: center;
+    }
+    body {
+        margin: auto;
+        padding: 0px;
+    }
+    #pied {
+        flex-direction: row;
+    }
+    .piedelem {
+        flex: 100%;
+        background-color: #f2f2f2;
+    }
+    .imageh {
+        flex-direction: column-reverse;
+    }
+    .cadrehdm {
+        margin: 0px;
+    }
+    .filtm {
+        margin-right: 300px;
+        margin-bottom: 10px;
+    }
+    .filt0 {
+        margin-bottom: 10px;
+    }
 }
