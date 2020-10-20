@@ -26,7 +26,6 @@ h3 {
 
 .entete {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     height: 80px;
     margin: 0;
@@ -34,54 +33,50 @@ h3 {
 
 .entlogo {
     flex-grow: 1;
+    padding-top: 20px;
 }
 
-.entdroite {
+.menu {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     flex-grow: 10;
     align-items: center;
-}
-
-.entmenu {
     text-align: right;
-    flex-grow: 10;
-}
-
-.entinsc {
-    width: 130px;
-    text-align: center;
-    flex-grow: 1;
-}
-
-.menu ul {
-    width: 50%;
-    list-style-type: none;
-    padding-top: 0px;
 }
 
 .menu li {
+    list-style-type: none;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 80px
+}
+
+.menulig {
     border-top: 2px solid white;
     display: inline;
-    padding-top: 29px;
 }
 
-.menu a {
+.menulig a {
     text-decoration: none;
     color: black;
-    padding: 30px;
+    padding-top: 40px;
 }
 
-.menu li:hover {
+.menulig a:hover {
+    color: #0065FC;
     border-top: 2px solid #0065FC;
 }
 
-.menu a:hover {
-    color: #0065FC;
+.inscrire {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    margin-left: 80px;
+    padding-top: 20px;
 }
 
-.inscrire {
+.inscrire a {
     text-decoration: none;
 }
 
@@ -102,21 +97,26 @@ h3 {
 
 .desc3 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     align-items: center;
 }
 
 .cerc3 {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 20px;
     text-align: center;
     margin-right: -16px;
-    border: solid 1px #DEEBFF;
+    border: solid 1px #d2d2d2;
     margin-right: 10px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    font-size: 11px;
+}
+
+.desc3t {
+    font-size: 14px;
 }
 
 .recherche {
@@ -147,6 +147,15 @@ h3 {
 
 .rechinp:focus {
     outline: 0;
+}
+
+.rechl {
+    visibility: visible;
+    margin-bottom: 15px;
+}
+
+.rechc {
+    visibility: hidden;
 }
 
 .rechbut {
@@ -200,6 +209,17 @@ h3 {
 
 .imgcerc {
     margin: auto;
+}
+
+.titred {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.titredi {
+    margin: auto 0px auto 0px;
 }
 
 .titfil {
@@ -275,6 +295,14 @@ h3 {
     padding-top: 5px;
 }
 
+.titcadregh {
+    margin: 20px 0 0 35px;
+}
+
+.titcadregb {
+    margin: 30px 0 30px 35px;
+}
+
 .imgg {
     border-radius: 15px 15px 0px 0px;
     max-width: 236px;
@@ -343,6 +371,109 @@ h3 {
 
 */
 
+.cadresbas {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.titimgbas {
+    font-weight: bold;
+    margin: 20px 0 0 25px;
+}
+
+.bcol1 {
+    height: 445px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+}
+
+.bcol2 {
+    display: flex;
+    flex-flow: column;
+    margin: 0px 40px 0px 40px;
+}
+
+.bcol4 {
+    display: flex;
+    flex-flow: column;
+    margin: 0px 0px 0px 40px;
+}
+
+.bcol2h {
+    height: 235px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+    margin-bottom: 45px
+}
+
+.bcol2b {
+    height: 165px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+}
+
+.bcol4h {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+    margin-bottom: 45px
+}
+
+.bcol4b {
+    height: 210px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+}
+
+.bcol1img {
+    height: 390px;
+    overflow: hidden;
+}
+
+.bcol2himg {
+    height: 180px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.bcol2bimg {
+    height: 110px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.bcol4himg {
+    height: 140px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.bcol4bimg {
+    height: 145px;
+    width: 300px;
+    overflow: hidden;
+}
+
+
+/*
+
+*/
+
 .fa-money-bill-wave,
 .fa-dog,
 .fa-child,
@@ -356,15 +487,68 @@ h3 {
     color: #e1e1e1;
 }
 
+footer {
+    margin: 0 -50px 0 -50px;
+}
+
 @media (max-width: 768px) {
+    body {
+        margin: auto;
+        padding: 0px;
+    }
+    .entete {
+        display: none;
+        align-items: none;
+        height: 0px;
+    }
+    .desc3 {
+        margin: auto;
+        width: 90%;
+    }
+    .cerc3 {
+        width: 25px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    .cadrehg {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    .cadrehdm {
+        border-radius: 0px;
+    }
+    .cadreg {
+        width: 335px;
+    }
+    .cadregi {
+        box-shadow: 3px 3px 3px 3px #e1e1e1;
+        width: 335px;
+        margin: 0px auto 30px auto;
+    }
+    .imgg {
+        max-width: 330px;
+        margin-left: 2px;
+    }
+    .titrebul {
+        margin-top: 8px;
+    }
+    .entlogo,
+    .menu {
+        flex-grow: 0;
+    }
+    .inscrire {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    nav {
+        height: 500px;
+    }
     .entdroite {
         display: flex;
         flex-flow: row-reverse wrap;
         justify-content: center;
-    }
-    body {
-        margin: auto;
-        padding: 0px;
     }
     #pied {
         flex-direction: row;
@@ -385,5 +569,49 @@ h3 {
     }
     .filt0 {
         margin-bottom: 10px;
+    }
+    .rechbut {
+        width: 50px;
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+    .recherche {
+        display: flex;
+        justify-content: center;
+    }
+    .rechl {
+        visibility: hidden;
+    }
+    .rechc {
+        visibility: visible;
+        margin-top: 17px;
+    }
+    .rechinp {
+        width: 220px;
+    }
+    .bcol1,
+    .bcol2h,
+    .bcol2b,
+    .bcol4h,
+    .bcol4b {
+        height: 180px;
+        margin: 0 auto 40px auto;
+    }
+    .bcol1img,
+    .bcol2himg,
+    .bcol2bimg,
+    .bcol4himg,
+    .bcol4bimg {
+        height: 135px;
+        width: 300px;
+    }
+    .titimgbas {
+        margin: 10px 0 0 25px;
+    }
+    .titcadregh {
+        margin: 20px 0 20px 35px;
+    }
+    footer {
+        margin: 0;
     }
 }

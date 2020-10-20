@@ -15,23 +15,20 @@
     <!-- Barre d'entête -->
     <div class="entete">
         <!-- logo de gauche -->
+
         <div class="entlogo"><img src="images/logo/Reservia.svg" alt="logo Reservia"></div>
-
         <!-- Menu de navigation du site -->
-        <div class="entdroite">
-            <div class="entmenu">
-                <ul class="menu">
-                    <li><a href="#herbergement">Hébergements</a></li>
-                    <li><a href="#activite">Activités</a></li>
-                </ul>
-            </div>
-
-            <!-- lien inscription -->
-            <div class="entinsc"><a href="#" class="inscrire">s'inscrire</a></div>
-        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menulig"><a href="#herbergement">Hébergements</a></li>
+                <li class="menulig"><a href="#activite">Activités</a></li>
+            </ul>
+        </nav>
+        <div class="inscrire"><a href="#">S'inscrire</a></div>
     </div>
 
-    <p class="desc1">Trouvez votre hébergement pour des vacances de rêve</p>
+
+    <p class="desc1"> Trouvez votre hébergement pour des vacances de rêve</p>
     <p class="desc2"> En plein centre ville ou en pleine nature</p>
 
     <div class="recherche">
@@ -39,7 +36,7 @@
             <div><i class="fas fa-map-marker-alt"></i></div>
         </div>
         <div><input type="text" class="rechinp" value=" Marseille, France"></div>
-        <div><input type="button" class="rechbut" value="Rechercher"></div>
+        <button class="rechbut"><i class="fas fa-search rechc"></i><div class="rechl">Rechercher</div></button>
     </div>
     <br>
 
@@ -79,7 +76,7 @@
         <div class="cerc3">
             <i class="fas fa-info imgcerc"></i>
         </div>
-        <p>Plus de 500 logements sont disponible dans cette ville</p>
+        <p class="desc3t"> Plus de 500 logements sont disponible dans cette ville</p>
     </div>
     <br>
 
@@ -89,7 +86,7 @@
 
         <!-- partie gauche -->
         <div class="cadrehg">
-            <h3>Hébergements à Marseille</h3>
+            <h3 class="titcadregh">Hébergements à Marseille</h3>
             <div class="imgauche">
                 <div class="cadregi">
                     <div class="cadreg"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imgg"></div>
@@ -164,11 +161,15 @@
                     </div>
                 </div>
             </div>
+            <h4 class="titcadregb">Afficher plus</h4>
         </div>
 
         <!-- partie droite -->
         <div class="cadrehdm">
-            <h3>Les plus populaires</h3>
+            <div class="titred">
+                <h3>Les plus populaires</h3>
+                <i class="fas fa-chart-line titredi"></i>
+            </div>
 
             <div>
                 <div class="cadredi">
@@ -230,7 +231,44 @@
 </body>
 <br>
 <!-- image du bas -->
-<h3>Activités à Marseille</h3>
+<h3 class="titcadregh">Activités à Marseille</h3>
+<div class="cadresbas">
+    <!-- 1ere colonne -->
+    <div class="bcol1">
+        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="bcol1img">
+        <div class="titimgbas">Vieux Port</div>
+    </div>
+    <!-- 2eme colonne -->
+    <div class="bcol2">
+        <div class="bcol2h">
+            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="bcol2himg">
+            <div class="titimgbas">Fort de Pomègues</div>
+        </div>
+
+        <div class="bcol2b">
+            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="bcol2bimg">
+            <div class="titimgbas">île de Frioul</div>
+        </div>
+    </div>
+    <!-- 3eme colonne -->
+    <div class="bcol1">
+        <div class="bcol1img">
+            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="bcol1img">
+        </div>
+        <div class="titimgbas">Parc National des Calanques</div>
+    </div>
+    <!-- 4eme colonne -->
+    <div class="bcol4">
+        <div class="bcol4h">
+            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="bcol4himg">
+            <div class="titimgbas">Notre-Dame-de-la-Garde</div>
+        </div>
+        <div class="bcol4h">
+            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="bcol4bimg">
+            <div class="titimgbas">Parc Longchamp</div>
+        </div>
+    </div>
+</div>
 <!-- le pied -->
 <footer>
 
