@@ -19,6 +19,7 @@ h3 {
     font-weight: bold;
 }
 
+
 /*
                 Gestion du bandeau d'entête
 */
@@ -50,7 +51,7 @@ h3 {
     padding-top: 20px;
     text-align: center;
     margin-left: 80px;
-    display:inline;
+    display: inline;
 }
 
 .menu li a {
@@ -78,6 +79,7 @@ h3 {
 .inscrire a {
     text-decoration: none;
 }
+
 
 /* ********** Partie descriptive ********** */
 
@@ -168,7 +170,10 @@ h3 {
 .rechbut:focus {
     outline: 0;
 }
+
+
 /* ********** gestion des filtres ********** */
+
 .filtre {
     display: flex;
     flex-flow: row wrap;
@@ -206,7 +211,10 @@ h3 {
 .imgcerc {
     margin: auto;
 }
+
+
 /* ********** titre avant images **********/
+
 .titred {
     display: flex;
     flex-flow: row;
@@ -232,6 +240,7 @@ h3 {
     font-size: large;
 }
 
+
 /*
                 premiere partie des images
 */
@@ -240,7 +249,8 @@ h3 {
     display: flex;
 }
 
-.cadrehg, .cadrehd {
+.cadrehg,
+.cadrehd {
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -324,6 +334,7 @@ h3 {
     width: 134px;
 }
 
+
 /*
                 Gestion du pied
 */
@@ -353,6 +364,7 @@ h3 {
 .ligpied {
     margin-bottom: 10px;
 }
+
 
 /*
 
@@ -460,15 +472,22 @@ footer {
     margin: 0 -50px 0 -50px;
 }
 
+
 /* ********** font awesome ********** */
 
-.fa-money-bill-wave, .fa-dog, .fa-child, .fa-heart, .fa-info, .etoileb {
+.fa-money-bill-wave,
+.fa-dog,
+.fa-child,
+.fa-heart,
+.fa-info,
+.etoileb {
     color: #0065FC;
 }
 
 .etoileg {
     color: #e1e1e1;
 }
+
 
 /* ******************************************************* */
 
@@ -485,34 +504,33 @@ footer {
     }
     .entete {
         flex-direction: column;
-        align-items:start;
-        height:120px;
+        align-items: start;
+        height: 120px;
     }
     nav {
-        margin:0;
-        width:100%;
+        margin: 0;
+        width: 100%;
         padding-top: 20px;
     }
     .menu {
         flex-flow: row;
-        justify-content:space-between;
-        padding-left:0px;
+        justify-content: space-between;
+        padding-left: 0px;
     }
     .menu li {
-        padding-top:0;
+        padding-top: 0;
         padding-bottom: 10px;
         margin-left: 0px;
         text-decoration: none;
         color: black;
         flex-grow: 1;
+        width: 50%;
     }
-
     .menu li:hover {
         color: #0065FC;
-        border-top :0;
-        border-bottom: 2px  solid #0065FC;
+        border-top: 0;
+        border-bottom: 2px solid #0065FC;
     }
-    
     /* ********** recherche ********** */
     .recherche {
         display: flex;
@@ -598,11 +616,19 @@ footer {
     .titcadregh {
         margin: 20px 0 20px 35px;
     }
-    .bcol1, .bcol2h, .bcol2b, .bcol4h, .bcol4b {
+    .bcol1,
+    .bcol2h,
+    .bcol2b,
+    .bcol4h,
+    .bcol4b {
         height: 180px;
         margin: 0 auto 40px auto;
     }
-    .bcol1img, .bcol2himg, .bcol2bimg, .bcol4himg, .bcol4bimg {
+    .bcol1img,
+    .bcol2himg,
+    .bcol2bimg,
+    .bcol4himg,
+    .bcol4bimg {
         height: 135px;
         width: 300px;
     }
