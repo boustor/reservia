@@ -4,11 +4,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ma première page avec du style">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/css/all.min.css">
 
     <title>Ma première page avec du style</title>
 </head>
+
 
 <body>
 
@@ -21,7 +23,7 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="#herbergement">Hébergements</a>
+                    <a href="#hebergement">Hébergements</a>
                 </li>
                 <li>
                     <a href="#activite">Activités</a>
@@ -48,10 +50,12 @@
             </div>
         </div>
         <div><input type="text" class="rechinp" value=" Marseille, France"></div>
-        <button class="rechbut">
+        <form action="#">
+            <button class="rechbut">
 				<i class="fas fa-search rechc"></i>
-				<span class="rechl">Rechercher</span>
-			</button>
+                <span class="rechl">Rechercher</span>
+            </button>
+        </form>
     </div>
     <br>
     <!-- ********** les filtres ********** -->
@@ -62,7 +66,7 @@
             <div class="filt cercle">
                 <i class="fas fa-money-bill-wave imgcerc"></i>
             </div>
-            <div class="titfil">Economie</div>
+            <div class="titfil">Economique</div>
         </div>
 
         <div class="filt0">
@@ -83,7 +87,7 @@
             <div class="filt cercle">
                 <i class="fas fa-dog imgcerc"></i>
             </div>
-            <div class="titfil">Annimaux autorisés</div>
+            <div class="titfil">Animaux autorisés</div>
         </div>
     </div>
 
@@ -104,80 +108,93 @@
 
         <!-- partie gauche -->
         <div class="cadrehg">
-            <h3 class="titcadregh">Hébergements à Marseille</h3>
+            <h3 class="titcadregh" id="hebergement">Hébergements à Marseille</h3>
+
             <div class="imgauche">
-                <div class="cadregi">
-                    <div class="cadreg"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imgg" alt="Auberge de la Cannebière"></div>
-                    <div class="titrebul">Auberge de la Cannebière</div>
-                    <div class="esplig">Nuit à partir de 25€</div>
-                    <div class="esplig">
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileg"></i>
+                <a href="#" class="nolien">
+                    <div class="cadregi">
+                        <div class="cadreg"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imgg  posimg" alt="Auberge de la Cannebière"></div>
+                        <div class="titrebul">Auberge de la Cannebière</div>
+                        <div class="esplig">Nuit à partir de 25€</div>
+                        <div class="esplig">
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileg"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="cadregi">
-                    <div class="cadreg"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imgg" alt="Hôtel du port"></div>
-                    <div class="titrebul">Hôtel du port</div>
-                    <div class="esplig">Nuit à partir de 52€</div>
-                    <div class="esplig">
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
+                </a>
+                <a href="#" class="nolien">
+                    <div class="cadregi">
+                        <div class="cadreg"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imgg" alt="Hôtel du port"></div>
+                        <div class="titrebul">Hôtel du port</div>
+                        <div class="esplig">Nuit à partir de 52€</div>
+                        <div class="esplig">
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="cadregi">
-                    <div class="cadreg"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imgg" alt="Hotel Les Mouettes"></div>
-                    <div class="titrebul">Hotel Les Mouettes</div>
-                    <div class="esplig">Nuit à partir de 76 €</div>
-                    <div class="esplig">
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileg"></i>
+                </a>
+                <a href="#" class="nolien">
+                    <div class="cadregi">
+                        <div class="cadreg"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imgg" alt="Hotel Les Mouettes"></div>
+                        <div class="titrebul">Hotel Les Mouettes</div>
+                        <div class="esplig">Nuit à partir de 76 €</div>
+                        <div class="esplig">
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileg"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="cadregi">
-                    <div class="cadreg"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imgg" alt="Hôtel de la mer"></div>
-                    <div class="titrebul">Hôtel de la mer</div>
-                    <div class="esplig">Nuit à partir de 46€</div>
-                    <div class="esplig">
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileg"></i>
-                        <i class="fas fa-star etoileg"></i>
+                </a>
+                <a href="#" class="nolien">
+                    <div class="cadregi">
+                        <div class="cadreg"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imgg" alt="Hôtel de la mer"></div>
+                        <div class="titrebul">Hôtel de la mer</div>
+                        <div class="esplig">Nuit à partir de 46€</div>
+                        <div class="esplig">
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileg"></i>
+                            <i class="fas fa-star etoileg"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="cadregi">
-                    <div class="cadreg"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imgg" alt="Auberge Le Panier"></div>
-                    <div class="titrebul">Auberge Le Panier</div>
-                    <div class="esplig">Nuit à partir de 23€</div>
-                    <div class="esplig">
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileg"></i>
+                </a>
+                <a href="#" class="nolien">
+                    <div class="cadregi">
+                        <div class="cadreg"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imgg" alt="Auberge Le Panier"></div>
+                        <div class="titrebul">Auberge Le Panier</div>
+                        <div class="esplig">Nuit à partir de 23€</div>
+                        <div class="esplig">
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileg"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="cadregi">
-                    <div class="cadreg"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imgg" alt="Hôtel chez Amina"></div>
-                    <div class="titrebul">Hôtel chez Amina</div>
-                    <div class="esplig">Nuit à partir de 96€</div>
-                    <div class="esplig">
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
-                        <i class="fas fa-star etoileb"></i>
+                </a>
+                <a href="#" class="nolien">
+                    <div class="cadregi">
+                        <div class="cadreg"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imgg" alt="Hôtel chez Amina"></div>
+                        <div class="titrebul">Hôtel chez Amina</div>
+                        <div class="esplig">Nuit à partir de 96€</div>
+                        <div class="esplig">
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                            <i class="fas fa-star etoileb"></i>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <h4 class="titcadregb">Afficher plus</h4>
         </div>
@@ -190,101 +207,104 @@
             </div>
 
             <div class="imgdroit">
-                <div class="cadredi">
-                    <div class="cadred"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="imgd" alt="Hôtel Le soleil du matin"></div>
-                    <div>
-                        <div class="titrebul">Hôtel Le soleil du
-                            <br>matin</div>
-                        <div class="esplig">Nuit à parir de 128€</div>
-                        <br>
-                        <br>
-                        <div class="esplig">
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
+                <a href="#" class="nolien">
+                    <div class="cadredi">
+                        <div class="cadred"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="imgd" alt="Hôtel Le soleil du matin"></div>
+                        <div>
+                            <div class="titrebul">Hôtel Le soleil du
+                                <br>matin</div>
+                            <div class="esplig">Nuit à parir de 128€</div>
+                            <br>
+                            <br>
+                            <div class="esplig">
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                </a>
                 <br>
-
-                <div class="cadredi">
-                    <div class="cadred"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="imgd" alt="Au coeur de l'eau"></div>
-                    <div>
-                        <div class="titrebul">Au coeur de l'eau<br>chambres d'hôtes</div>
-                        <div class="esplig">Nuit à parir de 71€</div>
-                        <br>
-                        <br>
-                        <div class="esplig">
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileg"></i>
+                <a href="#" class="nolien">
+                    <div class="cadredi">
+                        <div class="cadred"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="imgd" alt="Au coeur de l'eau"></div>
+                        <div>
+                            <div class="titrebul">Au coeur de l'eau<br>chambres d'hôtes</div>
+                            <div class="esplig">Nuit à parir de 71€</div>
+                            <br>
+                            <br>
+                            <div class="esplig">
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileg"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <br>
-
-                <div class="cadredi">
-                    <div class="cadred"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="imgd imgdok" alt="Hôtel Tout bleu et blanc"></div>
-                    <div>
-                        <div class="titrebul">Hôtel Tout bleu et
-                            <br>blanc</div>
-                        <div class="esplig">Nuit à parir de 68€</div>
-                        <br>
-                        <br>
-                        <div class="esplig">
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileb"></i>
-                            <i class="fas fa-star etoileg"></i>
+                <a href="#" class="nolien">
+                    <div class="cadredi">
+                        <div class="cadred"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="imgd imgdok" alt="Hôtel Tout bleu et blanc"></div>
+                        <div>
+                            <div class="titrebul">Hôtel Tout bleu et
+                                <br>blanc</div>
+                            <div class="esplig">Nuit à parir de 68€</div>
+                            <br>
+                            <br>
+                            <div class="esplig">
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileb"></i>
+                                <i class="fas fa-star etoileg"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 
     <br>
     <!-- image du bas -->
-    <h3 class="titcadregh">Activités à Marseille</h3>
+    <h3 class="titcadregh" id="activite">Activités à Marseille</h3>
     <div class="cadresbas">
         <!-- 1ere colonne -->
         <div class="bcol1">
-            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="bcol1img" alt="Vieux port">
+            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="bcol1img posimg" alt="Vieux port">
             <div class="titimgbas">Vieux Port</div>
         </div>
         <!-- 2eme colonne -->
         <div class="bcol2">
             <div class="bcol2h">
-                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="bcol2himg" Alt="Fort de Pomègues">
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="bcol2himg posimg" Alt="Fort de Pomègues">
                 <div class="titimgbas">Fort de Pomègues</div>
             </div>
 
             <div class="bcol2b">
-                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="bcol2bimg" alt="île de Frioul">
+                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="bcol2bimg posimg" alt="île de Frioul">
                 <div class="titimgbas">île de Frioul</div>
             </div>
         </div>
         <!-- 3eme colonne -->
         <div class="bcol1">
             <div class="bcol1img">
-                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="bcol1img" alt="Parc National des Calanques">
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="bcol1img posimg" alt="Parc National des Calanques">
             </div>
             <div class="titimgbas">Parc National des Calanques</div>
         </div>
         <!-- 4eme colonne -->
         <div class="bcol4">
             <div class="bcol4h">
-                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="bcol4himg" alt="Notre-Dame-de-la-Garde">
+                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="bcol4himg posimg" alt="Notre-Dame-de-la-Garde">
                 <div class="titimgbas">Notre-Dame-de-la-Garde</div>
             </div>
             <div class="bcol4h">
-                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="bcol4bimg" alt="Parc Longchamp">
+                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="bcol4bimg posimg" alt="Parc Longchamp">
                 <div class="titimgbas">Parc Longchamp</div>
             </div>
         </div>
