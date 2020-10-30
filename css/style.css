@@ -1,5 +1,5 @@
 body {
-    max-width: 1455px;
+    max-width: 1450px;
     margin: auto;
     background-color: white;
     font-family: 'Raleway-Regular', Arial, serif;
@@ -147,7 +147,7 @@ h3 {
 }
 
 .rechl {
-    visibility: visible;
+    visibility: none;
     margin: 15px 0 0 -10px;
     color: white;
 }
@@ -518,6 +518,9 @@ h3 {
     body {
         padding: 0;
     }
+    .entlogo {
+        padding-left: 20px;
+    }
     /* ********** entete ********** */
     .inscrire {
         position: absolute;
@@ -570,6 +573,8 @@ h3 {
     .rechc {
         visibility: visible;
         margin-top: 17px;
+        color: white;
+        font-size: 16px;
     }
     .rechinp {
         width: 220px;
