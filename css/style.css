@@ -151,6 +151,10 @@ h3 {
     color: white;
 }
 
+.rechl:hover {
+    cursor: pointer;
+}
+
 .rechc {
     visibility: hidden;
 }
@@ -417,7 +421,6 @@ h3 {
 .bcol4 {
     display: flex;
     flex-flow: column;
-    margin: 0px 0px 0px 40px;
 }
 
 .bcol2h {
