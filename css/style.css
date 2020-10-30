@@ -3,6 +3,7 @@ body {
     margin: auto;
     background-color: white;
     font-family: 'Raleway-Regular', Arial, serif;
+    padding: 0 40px 0 40px;
 }
 
 @font-face {
@@ -264,6 +265,7 @@ h3 {
 .nolien {
     text-decoration: none;
     margin: auto;
+    color: black;
 }
 
 .cadrehg,
