@@ -147,17 +147,15 @@ h3 {
 }
 
 .rechl {
-    visibility: none;
-    margin: 15px 0 0 -10px;
     color: white;
 }
 
-.rechl:hover {
-    cursor: pointer;
+.rechc {
+    display: none;
 }
 
-.rechc {
-    visibility: hidden;
+.rechbut:hover {
+    cursor: pointer;
 }
 
 .rechbut {
@@ -168,6 +166,9 @@ h3 {
     background-color: #0065FC;
     width: 135px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rechbut a {
@@ -423,6 +424,7 @@ h3 {
 .bcol4 {
     display: flex;
     flex-flow: column;
+    margin-bottom: 20px;
 }
 
 .bcol2h {
@@ -445,7 +447,7 @@ h3 {
 }
 
 .bcol4h {
-    height: 200px;
+    height: 195px;
     width: 300px;
     background-color: white;
     border-radius: 20px;
@@ -511,6 +513,72 @@ h3 {
     color: #e1e1e1;
 }
 
+@media (max-width: 1200px) {
+    .imageh {
+        flex-direction: column-reverse;
+    }
+    .titred {
+        margin: 0 30px 0 30px;
+    }
+    .imgdroit {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    .cadrehdm {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .cadrehg {
+        margin-top: 20px;
+    }
+    .cadredi {
+        margin: 0 10px 10px 10px;
+        min-width: 280px;
+        width: 280px;
+    }
+    .cadred {
+        width: 100px;
+    }
+    .bcol4 {
+        flex-direction: row;
+    }
+    .bcol4h {
+        margin-right: 20px;
+    }
+    .cadregi {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width:1000px) {
+    .bcol1,
+    .bcol2h,
+    .bcol2b,
+    .bcol4h,
+    .bcol4b {
+        height: 180px;
+        margin: 0 auto 40px auto;
+    }
+    .bcol1img,
+    .bcol2himg,
+    .bcol2bimg,
+    .bcol4himg,
+    .bcol4bimg {
+        height: 135px;
+        width: 300px;
+    }
+    .cadresbas {
+        flex-direction: column;
+    }
+    .bcol4 {
+        flex-direction: column;
+    }
+}
+
 
 /* ******************************************************* */
 
@@ -568,11 +636,10 @@ h3 {
         justify-content: center;
     }
     .rechl {
-        visibility: hidden;
+        display: none;
     }
     .rechc {
-        visibility: visible;
-        margin-top: 17px;
+        display: block;
         color: white;
         font-size: 16px;
     }
